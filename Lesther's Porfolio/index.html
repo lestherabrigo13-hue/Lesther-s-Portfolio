@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lesther Abrigo — Portfolio & Resume</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio and resume of Lesther Abrigo — aspiring web developer.">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">Lesther Abrigo's Portfolio</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <img src="img\Profile_Picture-try.jpg" alt="Lesther Abrigo Profile photo" class="hero-photo" />
+        <h1>Lesther Abrigo</h1>
+        <p class="lead">Aspiring Web Developer • I build clean and responsive websites</p>
+        <div class="hero-cta">
+          <a href="LESTHER ABRIGO - (Resume).pdf" class="btn" download>Download CV</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p>I am a motivated and dedicated Computer Engineering graduate looking for an opportunity where I can apply my knowledge in technology, programming, and problem-solving. I am eager to gain real-world experience, contribute to meaningful projects, and continue learning from experienced professionals in the field. With a strong sense of responsibility and dedication, a willingness to grow, a positive attitude, and a genuine passion for technology, I believe I can be a valuable member of any team while building a strong foundation for my future career in the tech industry.</p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <h3>Technical Skills</h3>
+      <ul class="skills-grid">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">C++</li>
+        <li class="skill">C#</li>
+        <li class="skill">Power BI</li>
+        <li class="skill">Advance Excel</li>
+        <li class="skill">Canva</li>
+        <li class="skill">Responsive Design</li>
+        <li class="skill">Basic JavaScript</li>
+      </ul>
+      
+      <h3>Core Competencies</h3>
+      <ul class="skills-grid">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">Flexbox</li>
+        <li class="skill">Responsive Design</li>
+        <li class="skill">Basic JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="section container">
+      <h2>Resume / Experience</h2>
+      <div class="resume-item">
+        <h3>Application Developer Intern — Creotec Philippines Inc.</h3>
+        <p class="meta"><b>January 2025 — April 2025</b></p>
+        <ul>
+          <li>Supported the development of interactive applications using Unity and C# for educational and gamified learning platforms.</li>
+          <li>Supported the development of user interfaces, basic game logic, and interactive features using C# in Unity.</li>
+          <li>Assisted in connecting applications to online databases to effectively manage and store user data.</li>
+          <li>Participated in the creation of three main projects: Pachinko (arcade-style game), Creopolis (2D RPG educational map), and Creosales (school performance app).</li>
+          <li>Collaborated with the team on basic debugging, testing, and version control to ensure each application worked properly and met project goals.</li>
+        </ul>
+      </div>
+
+      <div class="education">
+        <h3>Education</h3>
+        <p>Manuel S. Enverga University Foundation — Candelaria Inc.  · Bachelor of Science in Computer Engineering · 2025 · <b>CUM LAUDE</b></p>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/project1.png" alt="Project 1 screenshot" />
+          <h3>Project Title</h3>
+          <p>One-line description. <a href="#" target="_blank" rel="noopener">View Project</a></p>
+        </article>
+        <!-- duplicate for other projects -->
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+
+      <!-- Simple form that works with form services (no backend). Use Formspree or Netlify Forms -->
+      <form action="https://formspree.io/f/yourFormId" method="POST" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5"></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p>Or email me directly at <a href="mailto:lestherabrigo13@gmail.com">lestherabrigo13@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — <a href="https://github.com/yourusername">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
